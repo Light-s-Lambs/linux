@@ -1,7 +1,4 @@
-#include<linux/unistd.h>
-#include<linux/errno.h>
 #include<linux/kernel.h>
-#include<linux/sched.h>
 #include<linux/syscalls.h>
 
 long mycall(int n)
