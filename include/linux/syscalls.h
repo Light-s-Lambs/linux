@@ -16,8 +16,7 @@ struct inode;
 struct iocb;
 struct io_event;
 struct iovec;
-struct __kernel_old_itimerval;
-struct kexec_segment;
+struct __kernel_old_itimerval; struct kexec_segment;
 struct linux_dirent;
 struct linux_dirent64;
 struct list_head;
@@ -1005,6 +1004,7 @@ asmlinkage long sys_pidfd_send_signal(int pidfd, int sig,
 				       siginfo_t __user *info,
 				       unsigned int flags);
 asmlinkage long sys_pidfd_getfd(int pidfd, int fd, unsigned int flags);
+asmlinkage long sys_mycall(int n);
 
 /*
  * Architecture-specific system calls
